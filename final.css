@@ -1,0 +1,108 @@
+body { 
+  width: 80%;
+  margin: 0 auto;
+  color: navy;
+}
+header {
+width: 100%;  
+height: 150px;   
+text-align: center;
+color: white; 
+background-color: black; 
+}
+header h1{
+	padding-top: 20px;
+	font-family: winob;
+}
+#logo{
+left:0;
+top:0;
+width: 150px;
+float: right;
+}
+#img{
+	float: left;
+	margin: 10px;
+}
+
+header nav { 
+float: left; 
+top: -10px; 
+  
+} 
+header nav ul {
+list-style-type: none; 
+} 
+header nav ul li {   
+display: inline-block;   
+text-transform: uppercase;   
+padding: 0 10px;   
+font-size: 1em;
+}
+header nav a {
+text-decoration:none; 
+color: white; 
+background-color: black; 
+}
+#portfolio { 
+width: 100%;
+}
+#content .two_column {
+width: 35%;
+float: left;  
+display:inline-block;   
+vertical-align: top; 
+} 
+#content .two_column:nth-child(1) {
+margin-right: 9%; 
+} 
+footer {
+        background: linear-gradient(to left, black, white);
+        width: 100%;
+        border-width; 
+        float: left;
+        margin-bottom: 0;
+    }
+    .social-media{
+        text-align: center;
+    }
+    #logos{ 
+   margin-top: 25px;
+   margin-bottom: 40px;
+   margin-right:17px;
+   width: 42px;
+   height: 42px;
+   float: none;
+}
+  /* For Smaller Viewports */ 
+  @media all and (max-width:800px) {
+  body {
+     width: 90%;   
+     }
+    /*Turn off the portfolio/   
+    #aportfolio{
+    display:none;   
+    }   
+    header {     
+    height: auto;   
+}
+  /*Make the Logo and Menu Appear on top of each other*/   
+  header #logo,#img,  
+  header nav {
+  position: relative;     
+  top:auto;     
+  left:auto;
+ right:auto;   
+ }
+    /* We want the nav elements to stack*/   
+   header nav ul li {     
+   display: block;     
+   padding: auto;     
+   margin-left: -55px;   
+   } 
+     /* Let's make the columns stack too */   
+     #content .two_column {
+     width: 100%;
+    margin-right: 0;   
+    }
+   }
